@@ -1,0 +1,8 @@
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\Debug\SBES-P18_Server.exe.config
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\Debug\SBES-P18_Server.exe
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\Debug\SBES-P18_Server.pdb
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\Debug\Common.dll
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\Debug\Common.pdb
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\Debug\SBES-P18_Server.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\Debug\SBES-P18_Server.exe
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\Debug\SBES-P18_Server.pdb
