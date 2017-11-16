@@ -1,0 +1,4 @@
+C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\bin\Debug\Common.dll
+C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\bin\Debug\Common.pdb
+C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\obj\Debug\Common.dll
+C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\obj\Debug\Common.pdb

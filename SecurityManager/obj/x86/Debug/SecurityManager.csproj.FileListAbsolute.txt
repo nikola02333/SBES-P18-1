@@ -1,0 +1,7 @@
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\bin\x86\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\bin\x86\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\obj\x86\Debug\SecurityManager.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\obj\x86\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\obj\x86\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\obj\x86\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-05\Desktop\Dopuna\SecurityManager\obj\x86\Debug\SecurityManager.pdb
