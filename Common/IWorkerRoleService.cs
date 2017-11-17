@@ -7,10 +7,16 @@ using System.Text;
 namespace Common
 {
     [ServiceContract]
-    public   interface IWorkerRoleService
+    public interface IWorkerRoleService
     {
         [OperationContract]
-        int Work();
+        double Price(int p, List<Tarife> lt);
+        [OperationContract]
+        int Work(int id);
+        [OperationContract]
+        void StartId(int id);
+        
 
-    }
+    } 
 }
+

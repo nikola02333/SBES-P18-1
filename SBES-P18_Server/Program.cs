@@ -5,10 +5,12 @@ using System.Text;
 using System.ServiceModel;
 using Common;
 
+
 namespace SBES_P18_Server
 {
     class Program
     {
+        private static Dictionary<object, object> D;
         private static ServiceHost loadBalancer = null;
         public static void  Start()
         {
@@ -23,7 +25,15 @@ namespace SBES_P18_Server
         }
         static void Main(string[] args)
         {
+
             Start();
+            var CLB = new Queue<int>(100);  //Queue sa ID-evima korisnika koji zele obradu podataka
+
+            Dictionary<int, int> LBW = new Dictionary<int, int>(100);//Dictionary sa ID i potrosnjom  koji se salje workerima
+
+
+
+
             Console.ReadKey();
 
             Stop();

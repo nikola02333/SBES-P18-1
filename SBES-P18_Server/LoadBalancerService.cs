@@ -21,51 +21,28 @@ namespace SBES_P18_Server
             xRoot.IsNullable = true;
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<User>), xRoot);
-            List<User> dezerializedList = new List<User>();
+            List<User> deserializedList = new List<User>();
 
             using (FileStream stream = File.OpenRead("Users.xml"))
             {
-               dezerializedList = (List<User>)serializer.Deserialize(stream);
+                deserializedList = (List<User>)serializer.Deserialize(stream);
             }
-         
-            foreach (var item in dezerializedList)
+            foreach (var item in deserializedList)
             {
-               if(item.Username == u.Username && item.Pass == u.Pass)
+                if (item.Username == u.Username && item.Pass == u.Pass)
                 {
                     item.IsAuthenticated = true;
                     authenticated = true;
                     Console.WriteLine("Uspeso Logovanje na nalog {0} sa pravima {1}.", u.Username, u.Type);
                 }
-               
             }
             using (FileStream stream = File.OpenWrite("Users.xml"))
             {
-                
-                serializer.Serialize(stream, dezerializedList);
+                serializer.Serialize(stream, deserializedList);
             }
-
             return authenticated;
-            
-         }
 
-        public List<Brojilo> ReadXML()
-        {
-            XmlRootAttribute xRoot = new XmlRootAttribute();
-            xRoot.ElementName = "Brojila";
-            // xRoot.Namespace = "http://www.cpandl.com";
-          //  xRoot.IsNullable = true;
-            
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Brojilo>), xRoot);
-            List<Brojilo> dezerializedList = new List<Brojilo>();
-
-            using (FileStream stream = File.OpenRead("Baza.xml"))
-            {
-                dezerializedList = (List<Brojilo>)serializer.Deserialize(stream);
-            }
-
-            return dezerializedList;
-         }
-
+        }
         public bool AddEntyty(Brojilo brojilo)
         {
             if (!File.Exists("Baza.xml"))
@@ -77,7 +54,7 @@ namespace SBES_P18_Server
                 {
                     xmlWriter.WriteStartDocument();
                     xmlWriter.WriteStartElement("Brojila");
-                    
+
                     xmlWriter.WriteStartElement("Brojilo");
                     xmlWriter.WriteElementString("Id", brojilo.Id);
                     xmlWriter.WriteElementString("Ime", brojilo.Ime);
@@ -99,7 +76,7 @@ namespace SBES_P18_Server
                    new XElement("Brojilo",
                    new XElement("Id", brojilo.Id),
                    new XElement("Ime", brojilo.Ime),
-                     new XElement("Prezime",brojilo.Prezime),
+                     new XElement("Prezime", brojilo.Prezime),
                        new XElement("Potrosnja", brojilo.Potrosnja)
                    ));
                 xDocument.Save("Baza.xml");
@@ -111,19 +88,26 @@ namespace SBES_P18_Server
         {
             bool success_remove = false;
             List<Brojilo> counters = new List<Brojilo>();
-            counters = ReadXML();
+            counters = ReadXMLCounters();
             var itemToRemove = counters.Single(r => r.Id == counter.Id);
-            counters.Remove(itemToRemove);
-            SaveCountersToXml(counters); 
+            success_remove = counters.Remove(itemToRemove);
+            SaveCountersToXml(counters);
+
             return success_remove;
         }
-        public bool Work()
+        public bool Work(int id)
         {
-            throw new NotImplementedException();
+            // sad ovde  LB izvuce ceo ENTITET iz XML-a i  posalje WORKERu !!!
+            Brojilo counter = ReadCounterFromXml(id);
+
+
+
+            return true;
+
         }
         public bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld)
         {
-            List<Brojilo> couters = ReadXML();
+            List<Brojilo> couters = ReadXMLCounters();
             foreach (var item in couters)
             {
                 if (item.Id == counterOld.Id)
@@ -134,18 +118,61 @@ namespace SBES_P18_Server
             }
             return true;
         }
-        #region SaveToXML
-        public void SaveCountersToXml(List<Brojilo> dezerializedList)
+        #region ReadXMl
+        public List<Brojilo> ReadXMLCounters()
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
             xRoot.ElementName = "Brojila";
-            xRoot.IsNullable = true;
-
             XmlSerializer serializer = new XmlSerializer(typeof(List<Brojilo>), xRoot);
-            using (FileStream stream = File.OpenWrite("Baza.xml"))
+            List<Brojilo> dezerializedList = new List<Brojilo>();
+            using (FileStream stream = File.OpenRead("Baza.xml"))
             {
-                serializer.Serialize(stream, dezerializedList);
+                dezerializedList = (List<Brojilo>)serializer.Deserialize(stream);
             }
+            return dezerializedList;
+        }
+        public List<User> ReadXMLUsers()
+        {
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Users";
+            XmlSerializer serializer = new XmlSerializer(typeof(List<User>), xRoot);
+            List<User> dezerializedList = new List<User>();
+
+            using (FileStream stream = File.OpenRead("Users.xml"))
+            {
+                dezerializedList = (List<User>)serializer.Deserialize(stream);
+            }
+
+            return dezerializedList;
+        }
+        public Brojilo ReadCounterFromXml(int id)
+        {
+            Brojilo u = null;
+            List<Brojilo> deserializedList = new List<Brojilo>();
+            deserializedList = ReadXMLCounters();
+            u = deserializedList.Single(r => r.Id == id.ToString());
+
+            return u;
+        }
+        #endregion
+        #region SaveToXML
+        public void SaveCountersToXml(List<Brojilo> serializedList)
+        {
+            /* XmlRootAttribute xRoot = new XmlRootAttribute();
+             xRoot.ElementName = "Brojila";
+             XmlSerializer serializer = new XmlSerializer(typeof(List<Brojilo>), xRoot);
+             using (FileStream stream = File.OpenWrite("Baza.xml"))
+             {
+                 serializer.Serialize(stream, dezerializedList);
+             }*/
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Brojila";
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Brojilo>));
+            using (StreamWriter streamWriter = System.IO.File.CreateText("Baza.xml"))
+            {
+                xmlSerializer.Serialize(streamWriter, serializedList);
+            }
+            /// ovo jedino valja
         }
         public void SaveEntityToXml(List<User> dezerializedList)
         {
@@ -158,7 +185,14 @@ namespace SBES_P18_Server
                 serializer.Serialize(stream, dezerializedList);
             }
         }
+
+        public bool Work()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
+
+
 
     }
 }

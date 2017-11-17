@@ -5,5 +5,5 @@ using System.Text;
 
 namespace Common
 {
-   public enum EnumType  { Operator =0, Administrator=1};
+   public enum EnumType  { Operator = 0, Administrator = 1, Customer = 2};
 }

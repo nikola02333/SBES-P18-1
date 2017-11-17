@@ -1,0 +1,8 @@
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Worker.exe.config
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Worker.exe
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Worker.pdb
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Common.dll
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Common.pdb
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.exe
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.pdb

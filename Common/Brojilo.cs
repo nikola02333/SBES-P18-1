@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ServiceModel;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace Common
 {
@@ -12,7 +13,7 @@ namespace Common
     {
         public Brojilo()
         { }
-        public Brojilo(string id, string ime , string prz, string pot)
+        public Brojilo(string id, string ime, string prz, string pot)
         {
             this.Id = id;
             this.Ime = ime;
@@ -21,20 +22,23 @@ namespace Common
         }
         private string id;
         [DataMember]
+        [XmlElement("Id")]
         public string Id
         {
             get { return id; }
             set { id = value; }
         }
-        private string  ime;
+        private string ime;
         [DataMember]
-        public string  Ime
+        [XmlElement("Ime")]
+        public string Ime
         {
             get { return ime; }
             set { ime = value; }
         }
         private string prezime;
         [DataMember]
+        [XmlElement("Prezime")]
         public string Prezime
         {
             get { return prezime; }
@@ -42,6 +46,7 @@ namespace Common
         }
         private string potrosnja;
         [DataMember]
+        [XmlElement("Potrosnja")]
         public string Potrosnja
         {
             get { return potrosnja; }
