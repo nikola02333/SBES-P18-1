@@ -6,10 +6,13 @@
     <Prezime>Velickovic</Prezime>
     <Potrosnja>666</Potrosnja>
   </Brojilo>
+<<<<<<< HEAD
   <Brojilo>
     <Id>123</Id>
     <Ime>Niki</Ime>
     <Prezime>Velickovic</Prezime>
     <Potrosnja>666</Potrosnja>
   </Brojilo>
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
 </Brojila>

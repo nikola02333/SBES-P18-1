@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
+<<<<<<< HEAD
 VisualStudioVersion = 14.0.25123.0
+=======
+VisualStudioVersion = 14.0.25420.1
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBES-P18_Server", "SBES-P18_Server\SBES-P18_Server.csproj", "{79A462DE-35F2-455D-A800-3437CF2B833D}"
 EndProject
@@ -9,8 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBES-P18_Client", "SBES-P18
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{52769EB6-A053-4E41-AD97-ED09125C9F7A}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}"
 EndProject
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +64,7 @@ Global
 		{52769EB6-A053-4E41-AD97-ED09125C9F7A}.Release|x64.Build.0 = Release|Any CPU
 		{52769EB6-A053-4E41-AD97-ED09125C9F7A}.Release|x86.ActiveCfg = Release|Any CPU
 		{52769EB6-A053-4E41-AD97-ED09125C9F7A}.Release|x86.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -69,6 +77,8 @@ Global
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Release|x64.Build.0 = Release|Any CPU
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C94CDC8-A3CD-4AFD-BFD2-997BD96BB256}.Release|x86.Build.0 = Release|Any CPU
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -64,7 +64,10 @@
     <Compile Include="ILoadBalancerService.cs" />
     <Compile Include="IWorkerRoleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Tarife.cs" />
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
     <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

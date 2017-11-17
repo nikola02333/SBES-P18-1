@@ -6,6 +6,7 @@ C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\bin\x86\Debug\Commo
 C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\x86\Debug\SBES-P18_Server.csprojResolveAssemblyReference.cache
 C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\x86\Debug\SBES-P18_Server.exe
 C:\Users\Administrator.P05-05\Desktop\Dopuna\SBES-P18_Server\obj\x86\Debug\SBES-P18_Server.pdb
+<<<<<<< HEAD
 C:\Users\Aleksandar\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.exe.config
 C:\Users\Aleksandar\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.exe
 C:\Users\Aleksandar\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.pdb
@@ -22,3 +23,5 @@ C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\De
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.pdb
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\Common.dll
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\Common.pdb
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139

@@ -5,12 +5,18 @@ using System.Text;
 using System.ServiceModel;
 using Common;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
 namespace SBES_P18_Server
 {
     class Program
     {
+<<<<<<< HEAD
         private static Dictionary<object, object> D;
+=======
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
         private static ServiceHost loadBalancer = null;
         public static void  Start()
         {
@@ -25,6 +31,7 @@ namespace SBES_P18_Server
         }
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 
             Start();
             var CLB = new Queue<int>(100);  //Queue sa ID-evima korisnika koji zele obradu podataka
@@ -34,6 +41,9 @@ namespace SBES_P18_Server
 
 
 
+=======
+            Start();
+>>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
             Console.ReadKey();
 
             Stop();
