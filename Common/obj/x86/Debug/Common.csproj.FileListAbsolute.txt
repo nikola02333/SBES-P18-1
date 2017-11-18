@@ -2,7 +2,6 @@ C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\bin\x86\Debug\Common.dll
 C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\bin\x86\Debug\Common.pdb
 C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\obj\x86\Debug\Common.dll
 C:\Users\Administrator.P05-05\Desktop\Dopuna\Common\obj\x86\Debug\Common.pdb
-<<<<<<< HEAD
 C:\Users\Aleksandar\Desktop\SBES-P18-master\Common\bin\x86\Debug\Common.dll
 C:\Users\Aleksandar\Desktop\SBES-P18-master\Common\bin\x86\Debug\Common.pdb
 C:\Users\Aleksandar\Desktop\SBES-P18-master\Common\obj\x86\Debug\Common.csprojResolveAssemblyReference.cache
@@ -12,5 +11,3 @@ C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Common\bin\x86\Debug\Commo
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Common\bin\x86\Debug\Common.pdb
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Common\obj\x86\Debug\Common.dll
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Common\obj\x86\Debug\Common.pdb
-=======
->>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139

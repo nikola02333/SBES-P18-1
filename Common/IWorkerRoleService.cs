@@ -7,7 +7,6 @@ using System.Text;
 namespace Common
 {
     [ServiceContract]
-<<<<<<< HEAD
     public interface IWorkerRoleService
     {
         [OperationContract]
@@ -21,12 +20,3 @@ namespace Common
     } 
 }
 
-=======
-    public   interface IWorkerRoleService
-    {
-        [OperationContract]
-        int Work();
-
-    }
-}
->>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139

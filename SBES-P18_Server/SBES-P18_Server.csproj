@@ -64,10 +64,6 @@
     <Compile Include="LoadBalancerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-=======
-    <Compile Include="WorkerRoleService.cs" />
->>>>>>> b29379756fc0829bfe43b745aac3d329b6b2f139
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
