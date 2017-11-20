@@ -63,6 +63,7 @@
     <Compile Include="EnumType.cs" />
     <Compile Include="ILoadBalancerService.cs" />
     <Compile Include="IWorkerRoleService.cs" />
+    <Compile Include="LBdatamap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tarife.cs" />
     <Compile Include="User.cs" />

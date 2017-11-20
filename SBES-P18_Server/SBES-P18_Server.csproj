@@ -52,6 +52,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -69,6 +70,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{52769eb6-a053-4e41-ad97-ed09125c9f7a}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityManager\SecurityManager.csproj">
+      <Project>{e41d356e-a8a3-4c09-b69f-febcb79c11b9}</Project>
+      <Name>SecurityManager</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

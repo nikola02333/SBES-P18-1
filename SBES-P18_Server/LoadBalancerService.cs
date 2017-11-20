@@ -7,6 +7,8 @@ using System.Xml.Linq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
+using SecurityManager;
+using System.Threading;
 
 namespace SBES_P18_Server
 {
@@ -45,44 +47,56 @@ namespace SBES_P18_Server
         }
         public bool AddEntyty(Brojilo brojilo)
         {
-            if (!File.Exists("Baza.xml"))
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            /// audit both successfull and failed authorization checks
+            if (principal.IsInRole(Permissions.addentity.ToString()))
             {
-                XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
-                xmlWriterSettings.Indent = true;
-                xmlWriterSettings.NewLineOnAttributes = true;
-                using (XmlWriter xmlWriter = XmlWriter.Create("Baza.xml", xmlWriterSettings))
+                if (!File.Exists("Baza.xml"))
                 {
-                    xmlWriter.WriteStartDocument();
-                    xmlWriter.WriteStartElement("Brojila");
+                    XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
+                    xmlWriterSettings.Indent = true;
+                    xmlWriterSettings.NewLineOnAttributes = true;
+                    using (XmlWriter xmlWriter = XmlWriter.Create("Baza.xml", xmlWriterSettings))
+                    {
+                        xmlWriter.WriteStartDocument();
+                        xmlWriter.WriteStartElement("Brojila");
 
-                    xmlWriter.WriteStartElement("Brojilo");
-                    xmlWriter.WriteElementString("Id", brojilo.Id);
-                    xmlWriter.WriteElementString("Ime", brojilo.Ime);
-                    xmlWriter.WriteElementString("Prezime", brojilo.Prezime);
-                    xmlWriter.WriteElementString("Potrosnja", brojilo.Potrosnja);
-                    xmlWriter.WriteEndElement();
+                        xmlWriter.WriteStartElement("Brojilo");
+                        xmlWriter.WriteElementString("Id", brojilo.Id);
+                        xmlWriter.WriteElementString("Ime", brojilo.Ime);
+                        xmlWriter.WriteElementString("Prezime", brojilo.Prezime);
+                        xmlWriter.WriteElementString("Potrosnja", brojilo.Potrosnja);
+                        xmlWriter.WriteEndElement();
 
-                    xmlWriter.WriteEndElement();
-                    xmlWriter.WriteEndDocument();
+                        xmlWriter.WriteEndElement();
+                        xmlWriter.WriteEndDocument();
+                    }
                 }
+                else
+                {
+                    XDocument xDocument = XDocument.Load("Baza.xml");
+                    XElement root = xDocument.Element("Brojila");
+                    IEnumerable<XElement> rows = root.Descendants("Brojilo");
+                    XElement firstRow = rows.First();
+                    firstRow.AddBeforeSelf(
+                       new XElement("Brojilo",
+                       new XElement("Id", brojilo.Id),
+                       new XElement("Ime", brojilo.Ime),
+                         new XElement("Prezime", brojilo.Prezime),
+                           new XElement("Potrosnja", brojilo.Potrosnja)
+                       ));
+                    xDocument.Save("Baza.xml");
+
+                }
+                Console.WriteLine("Zavrsio sam sa upisivanjem podataka u fajl.");
+                return true;
+
             }
             else
             {
-                XDocument xDocument = XDocument.Load("Baza.xml");
-                XElement root = xDocument.Element("Brojila");
-                IEnumerable<XElement> rows = root.Descendants("Brojilo");
-                XElement firstRow = rows.First();
-                firstRow.AddBeforeSelf(
-                   new XElement("Brojilo",
-                   new XElement("Id", brojilo.Id),
-                   new XElement("Ime", brojilo.Ime),
-                     new XElement("Prezime", brojilo.Prezime),
-                       new XElement("Potrosnja", brojilo.Potrosnja)
-                   ));
-                xDocument.Save("Baza.xml");
+                return false;  // autentifikacija onda nije uspela !!!
             }
-            Console.WriteLine("Zavrsio sam sa upisivanjem podataka u fajl.");
-            return true;
+               
         }
         public bool RemoveEntyty(Brojilo counter)
         {

@@ -22,3 +22,4 @@ C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\De
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.pdb
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\Common.dll
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\SBES-P18_Server\bin\x86\Debug\Common.pdb
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SBES-P18_Server\bin\x86\Debug\SBES-P18_Server.exe.config

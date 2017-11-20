@@ -13,12 +13,17 @@ namespace Worker
 {
     public class WorkerService : IWorkerRoleService
     {
+        public static List<Tarife> tarife = new List<Tarife>();
 
+        public WorkerService()
+        {
+            tarife= ReadXMLTarife();
+        }
 
         public List<Tarife> ReadXMLTarife()
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
-            xRoot.ElementName = "Tarifa";
+            xRoot.ElementName = "Configuration";
             
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<Tarife>), xRoot);

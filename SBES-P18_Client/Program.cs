@@ -15,10 +15,14 @@ namespace SBES_P18_Client
 
             ILoadBalancerService proxy = factory.CreateChannel();
             Brojilo br = new Brojilo("123", "Niki", "Velickovic", "666");
-           proxy.AddEntyty(br);
+            if (proxy.AddEntyty(br))
+            {
+
+            }
+              
 
          
-            User u = new User("nikola023", "xxx", EnumType.Administrator);
+         /*   User u = new User("nikola023", "xxx", EnumType.Administrator);
 
             if (proxy.Login(u))
             {
@@ -29,10 +33,8 @@ namespace SBES_P18_Client
 
                 Console.WriteLine("Korisnik {0}  nije uspeo da se uloguje", u.Username);
 
-            }
-
-          bool x=  proxy.RemoveEntyty(br);
-
+            }*/
+         // bool x=  proxy.RemoveEntyty(br);
             Console.ReadKey();
         }
     }

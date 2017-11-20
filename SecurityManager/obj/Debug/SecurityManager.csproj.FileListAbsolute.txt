@@ -1,0 +1,33 @@
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\obj\Debug\SecurityManager.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\Admin\Desktop\VEZBE_Studenti\Vezba_5\Auditing\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\03 Vezba\03-uradjena\Auditing\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\obj\Debug\SecurityManager.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\SBES-P18\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.pdb

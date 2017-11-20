@@ -5,8 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-
-
+using SecurityManager;
 
 namespace Worker
 {
@@ -14,8 +13,8 @@ namespace Worker
     {
         static void Main(string[] args)
         {
-            
-            
+            WorkerService w = new WorkerService();
+
         }
     }
 }
