@@ -16,8 +16,12 @@ namespace Common
         bool RemoveEntyty(Brojilo counter);
         [OperationContract]
         bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld);
+
         [OperationContract]
-        bool Work();
+        bool ChangeValueBrojila(string id, string potrosnja);
+
+        [OperationContract]
+        bool ChangeIdBrojila(string newId, string oldId);
 
 
 

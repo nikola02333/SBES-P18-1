@@ -52,7 +52,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -65,19 +64,28 @@
     <Compile Include="LoadBalancerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkerInformations.cs" />
+    <Compile Include="WorkerLB.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{52769eb6-a053-4e41-ad97-ed09125c9f7a}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ILBService\ILBService.csproj">
+      <Project>{fd032cc7-44e8-4410-9de2-ff363cc6381a}</Project>
+      <Name>ILBService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SecurityManager\SecurityManager.csproj">
-      <Project>{e41d356e-a8a3-4c09-b69f-febcb79c11b9}</Project>
+      <Project>{E41D356E-A8A3-4C09-B69F-FEBCB79C11B9}</Project>
       <Name>SecurityManager</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

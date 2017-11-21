@@ -6,23 +6,15 @@ C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\bin\Debug\Common.pd
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.exe
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-master\Worker\obj\Debug\Worker.pdb
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\Worker.exe.config
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\Worker.exe
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\Worker.pdb
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\Common.dll
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\Common.pdb
-C:\Users\nikola\Desktop\SBES-P18\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
-C:\Users\nikola\Desktop\SBES-P18\Worker\obj\Debug\Worker.exe
-C:\Users\nikola\Desktop\SBES-P18\Worker\obj\Debug\Worker.pdb
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\SecurityManager.dll
-C:\Users\nikola\Desktop\SBES-P18\Worker\bin\Debug\SecurityManager.pdb
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\Worker.exe.config
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\Worker.exe
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\Worker.pdb
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\Common.dll
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\SecurityManager.dll
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\Common.pdb
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\bin\Debug\SecurityManager.pdb
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\obj\Debug\Worker.exe
-C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\Worker\obj\Debug\Worker.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\Worker.exe.config
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\Worker.exe
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\Worker.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\Common.dll
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\ILBService.dll
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\SBES-P18_Server.exe
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\Common.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\SBES-P18_Server.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\bin\Debug\ILBService.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\obj\Debug\Worker.exe
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\obj\Debug\Worker.pdb

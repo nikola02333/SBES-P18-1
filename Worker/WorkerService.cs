@@ -8,23 +8,20 @@ using System.Xml;
 using Common;
 using System.Xml.Serialization;
 using System.IO;
+using WcfService3;
+
+
 
 namespace Worker
 {
-    public class WorkerService : IWorkerRoleService
+    public class WorkerService : IWorkerService
     {
-        public static List<Tarife> tarife = new List<Tarife>();
-
-        public WorkerService()
-        {
-            tarife= ReadXMLTarife();
-        }
 
         public List<Tarife> ReadXMLTarife()
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
             xRoot.ElementName = "Configuration";
-            
+
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<Tarife>), xRoot);
             List<Tarife> dezerializedList = new List<Tarife>();
@@ -37,33 +34,28 @@ namespace Worker
             return dezerializedList;
         }
 
-        public double Price(int pot, List<Tarife> lt)
+        public double GetPrice(string pot)
         {
+            //string to int
+            int potrosnja = Int32.Parse(pot);
+            List<Tarife> lt = ReadXMLTarife();
+
             double cena=0;
             for(int i=0; i<lt.Count(); i++)
             {
 
-                if (pot > lt[i].GG)
+                if (potrosnja > lt[i].GG)
                 {
                     cena += (lt[i].GG - lt[i].DG) * lt[i].Cena;
                 }
-                else if(pot > lt[i].DG)
+                else if(potrosnja > lt[i].DG)
                 {
-                    cena += (pot - lt[i].DG) * lt[i].Cena;
+                    cena += (potrosnja - lt[i].DG) * lt[i].Cena;
                 }               
             }
 
             return cena;
         }
 
-        public int Work(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void StartId(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

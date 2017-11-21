@@ -7,13 +7,20 @@ using System.Xml.Linq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
-using SecurityManager;
+
+using System.ServiceModel;
 using System.Threading;
+using System.Collections.Concurrent;
+using WcfService3;
+using SecurityManager;
 
 namespace SBES_P18_Server
 {
     public class LoadBalancerService : ILoadBalancerService
     {
+        
+
+
         public bool Login(User u)
         {
             bool authenticated = false;
@@ -47,6 +54,8 @@ namespace SBES_P18_Server
         }
         public bool AddEntyty(Brojilo brojilo)
         {
+
+
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             /// audit both successfull and failed authorization checks
             if (principal.IsInRole(Permissions.addentity.ToString()))
@@ -86,20 +95,21 @@ namespace SBES_P18_Server
                            new XElement("Potrosnja", brojilo.Potrosnja)
                        ));
                     xDocument.Save("Baza.xml");
-
+                    return true;
                 }
-                Console.WriteLine("Zavrsio sam sa upisivanjem podataka u fajl.");
-                return true;
-
             }
             else
             {
-                return false;  // autentifikacija onda nije uspela !!!
+                //audit faild
             }
-               
+            Console.WriteLine("Zavrsio sam sa upisivanjem podataka u fajl.");
+            return true;
         }
+
+
         public bool RemoveEntyty(Brojilo counter)
         {
+            
             bool success_remove = false;
             List<Brojilo> counters = new List<Brojilo>();
             counters = ReadXMLCounters();
@@ -107,18 +117,11 @@ namespace SBES_P18_Server
             success_remove = counters.Remove(itemToRemove);
             SaveCountersToXml(counters);
 
-            return success_remove;
+            return success_remove; 
         }
-        public bool Work(int id)
-        {
-            // sad ovde  LB izvuce ceo ENTITET iz XML-a i  posalje WORKERu !!!
-            Brojilo counter = ReadCounterFromXml(id);
 
 
 
-            return true;
-
-        }
         public bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld)
         {
             List<Brojilo> couters = ReadXMLCounters();
@@ -132,6 +135,55 @@ namespace SBES_P18_Server
             }
             return true;
         }
+
+        public bool ChangeValueBrojila(string id, string potrosnja)
+        {
+            bool changed = false;
+
+            Brojilo counter = new Brojilo();
+            int id1 = Int32.Parse(id);
+
+            counter = ReadCounterFromXml(id1);
+            
+            counter.Potrosnja = potrosnja;
+            changed = true;
+
+            List<Brojilo> listCounters = new List<Brojilo>();
+
+            listCounters = ReadXMLCounters();
+            listCounters.Add(counter);
+
+            SaveCountersToXml(listCounters);
+
+            return changed;
+
+        }
+
+
+        public bool ChangeIdBrojila(string newId, string oldId)
+        {
+            bool changed = false;
+
+            Brojilo counter = new Brojilo();
+            int stariId = Int32.Parse(oldId);
+
+            counter = ReadCounterFromXml(stariId);
+
+            counter.Id = newId;
+            changed = true;
+
+            List<Brojilo> listCounters = new List<Brojilo>();
+
+            listCounters = ReadXMLCounters();
+            listCounters.Add(counter);
+
+            SaveCountersToXml(listCounters);
+
+            return changed;
+
+        }
+
+
         #region ReadXMl
         public List<Brojilo> ReadXMLCounters()
         {
@@ -145,6 +197,8 @@ namespace SBES_P18_Server
             }
             return dezerializedList;
         }
+
+
         public List<User> ReadXMLUsers()
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
@@ -159,26 +213,24 @@ namespace SBES_P18_Server
 
             return dezerializedList;
         }
+
+
         public Brojilo ReadCounterFromXml(int id)
         {
             Brojilo u = null;
             List<Brojilo> deserializedList = new List<Brojilo>();
+
             deserializedList = ReadXMLCounters();
             u = deserializedList.Single(r => r.Id == id.ToString());
 
             return u;
         }
+
+
         #endregion
-        #region SaveToXML
+        
         public void SaveCountersToXml(List<Brojilo> serializedList)
         {
-            /* XmlRootAttribute xRoot = new XmlRootAttribute();
-             xRoot.ElementName = "Brojila";
-             XmlSerializer serializer = new XmlSerializer(typeof(List<Brojilo>), xRoot);
-             using (FileStream stream = File.OpenWrite("Baza.xml"))
-             {
-                 serializer.Serialize(stream, dezerializedList);
-             }*/
             XmlRootAttribute xRoot = new XmlRootAttribute();
             xRoot.ElementName = "Brojila";
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Brojilo>));
@@ -188,6 +240,8 @@ namespace SBES_P18_Server
             }
             /// ovo jedino valja
         }
+
+
         public void SaveEntityToXml(List<User> dezerializedList)
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
@@ -200,14 +254,64 @@ namespace SBES_P18_Server
             }
         }
 
-        public bool Work()
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
+        /// <summary>
+        /// //////////////////////////////
+        /// </summary>
+        /// <returns></returns>
+        private int workerCounter = 0;
 
+       
+
+        public double GetPotrosnja(int id)
+        {
+            // sad ovde  LB izvuce ceo ENTITET iz XML-a i  posalje WORKERu !!!
+            Brojilo counter = ReadCounterFromXml(id);
+
+            do
+            {
+                foreach (var keyValuePair in WorkerLB.workers)
+                {
+                   
+                    if (keyValuePair.Value.Free)
+                    {
+                        keyValuePair.Value.Free = false;
+                        IWorkerService workerChannel  = getChannelToWorker(keyValuePair.Value);
+
+                        double cena = workerChannel.GetPrice(counter.Potrosnja);    //Sva logika za getPrice
+                        keyValuePair.Value.Free = true; // oznacimo ga kao slobodnog 
+                        return cena;
+
+                    }
+
+                }
+                Thread.Sleep(1000);
+
+            } while (true);
+
+            return -1;
+
+        }
+
+
+       
+
+
+        private IWorkerService getChannelToWorker(WorkerInformations worker)
+        {
+            BasicHttpBinding myBinding = new BasicHttpBinding();
+
+            EndpointAddress myEndpoint = new EndpointAddress(worker.URL);
+
+            ChannelFactory<IWorkerService> myChannelFactory = new ChannelFactory<IWorkerService>(myBinding, myEndpoint);
+
+            IWorkerService workerChannel = myChannelFactory.CreateChannel();
+
+            return workerChannel;
+
+        }
 
 
     }
 }
+
 

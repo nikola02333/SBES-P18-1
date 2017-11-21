@@ -1,0 +1,4 @@
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\bin\Debug\ILBService.dll
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\bin\Debug\ILBService.pdb
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\obj\Debug\ILBService.dll
+C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\obj\Debug\ILBService.pdb
