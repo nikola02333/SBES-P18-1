@@ -77,10 +77,6 @@
       <Project>{52769eb6-a053-4e41-ad97-ed09125c9f7a}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILBService\ILBService.csproj">
-      <Project>{FD032CC7-44E8-4410-9DE2-FF363CC6381A}</Project>
-      <Name>ILBService</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SBES-P18_Server\SBES-P18_Server.csproj">
       <Project>{79A462DE-35F2-455D-A800-3437CF2B833D}</Project>
       <Name>SBES-P18_Server</Name>

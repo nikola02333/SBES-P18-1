@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using WcfService3;
+
 
 namespace Worker
 {
@@ -14,24 +14,16 @@ namespace Worker
     {
         static void Main(string[] args)
         {
-            WorkerService obj = new WorkerService();
-
-            // napraviti Kanal ka LoadBalanceru
-            // pozvati metodu register
-            // kada metoda vrati URL
-            // napraviti ServiceHost sa tim URLom
-           // BasicHttpBinding myBinding = new BasicHttpBinding();
+          
             NetTcpBinding myBinding = new NetTcpBinding();
-
             EndpointAddress myEndpoint = new EndpointAddress("net.tcp://localhost:29000/IWorkerLB");
-
             ChannelFactory<IWorkerLB> myChannelFactory = new ChannelFactory<IWorkerLB>(myBinding, myEndpoint);
-
             IWorkerLB workerChannel = myChannelFactory.CreateChannel();
-
-            //////////////////////////////////////////////
-
-            string myIp = "127.0.0.1"; // args[0]  
+            
+            Random rnd = new Random();
+            int rdnm = rnd.Next(1,30);
+           
+           string myIp = "127.0.0." +rdnm+""; // args[0] 
             string workerServiceURL = workerChannel.Register(myIp);     //ovde puca
 
 
@@ -49,9 +41,6 @@ namespace Worker
                 workerChannel.UnRegister(workerServiceURL);
                 Console.WriteLine("Worker sa url-om {0} :", workerServiceURL);
             }
-
-
-
         }
     }
 }

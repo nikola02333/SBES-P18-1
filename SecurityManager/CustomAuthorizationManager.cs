@@ -18,19 +18,19 @@ namespace SecurityManager
 			if (principal != null)
 			{
 				authorized = (principal as CustomPrincipal).IsInRole(Permissions.execute.ToString());
-
+                
 				if (authorized == false)
 				{
-					// false/// audit authorization failed event					
-				}
+                    // false/// audit authorization failed event	
+                   // Audit.AuthorizationFailed(principal.Identity.Name);
+                }
 				else
 				{
-                   // return true;	/// audit successfull authorization event
+                    // return true;	/// audit successfull authorization event
+                    Audit.AuthenticationSuccess(principal.Identity.Name);
 				}
 			}
-
 			return authorized;
-            //return true;
 		}
 	}
 }

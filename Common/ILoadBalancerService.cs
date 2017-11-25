@@ -9,21 +9,20 @@ namespace Common
    public interface ILoadBalancerService
     {
         [OperationContract]
-        bool Login(User u);
-        [OperationContract]
         bool AddEntyty(Brojilo counter);
         [OperationContract]
-        bool RemoveEntyty(Brojilo counter);
-        [OperationContract]
         bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld);
-
         [OperationContract]
         bool ChangeValueBrojila(string id, string potrosnja);
-
         [OperationContract]
         bool ChangeIdBrojila(string newId, string oldId);
-
-
-
+        [OperationContract]
+        double Process_Id(int id_Brojila);
+		[OperationContract]
+        EnumType Detekcija();
+        [OperationContract]
+        Brojilo SearchId(int id);
+        [OperationContract]
+        bool RemoveEntyty(int id);
     }
 }

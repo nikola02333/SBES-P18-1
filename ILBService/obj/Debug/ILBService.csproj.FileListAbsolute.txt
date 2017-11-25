@@ -2,3 +2,7 @@ C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\bin
 C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\bin\Debug\ILBService.pdb
 C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\obj\Debug\ILBService.dll
 C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\ILBService\obj\Debug\ILBService.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\ILBService\bin\Debug\ILBService.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\ILBService\bin\Debug\ILBService.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\ILBService\obj\Debug\ILBService.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\ILBService\obj\Debug\ILBService.pdb

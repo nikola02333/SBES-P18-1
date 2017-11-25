@@ -1,0 +1,9 @@
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\bin\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\bin\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\obj\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\obj\Debug\KeyManagement.pdb
+H:\Kriptografija\01_Example_ECB_XML_\KeyManagement\bin\Debug\KeyManagement.dll
+H:\Kriptografija\01_Example_ECB_XML_\KeyManagement\bin\Debug\KeyManagement.pdb
+H:\Kriptografija\01_Example_ECB_XML_\KeyManagement\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+H:\Kriptografija\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.dll
+H:\Kriptografija\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.pdb

@@ -8,9 +8,6 @@ using System.Xml;
 using Common;
 using System.Xml.Serialization;
 using System.IO;
-using WcfService3;
-
-
 
 namespace Worker
 {
@@ -21,7 +18,6 @@ namespace Worker
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
             xRoot.ElementName = "Configuration";
-
 
             XmlSerializer serializer = new XmlSerializer(typeof(List<Tarife>), xRoot);
             List<Tarife> dezerializedList = new List<Tarife>();
@@ -39,7 +35,7 @@ namespace Worker
             //string to int
             int potrosnja = Int32.Parse(pot);
             List<Tarife> lt = ReadXMLTarife();
-
+            Console.WriteLine("Obradjujem proracun...");
             double cena=0;
             for(int i=0; i<lt.Count(); i++)
             {
@@ -53,7 +49,7 @@ namespace Worker
                     cena += (potrosnja - lt[i].DG) * lt[i].Cena;
                 }               
             }
-
+          
             return cena;
         }
 

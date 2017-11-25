@@ -58,9 +58,10 @@ namespace SecurityManager
 			}
 		}
 
-		public static void AuthorizationSuccess(string userName, string serviceName)
+		public static void AuthorizationSuccess(string userName,string accesTo)
 		{
-            customLog.WriteEntry(String.Format(AuditEvents.UserAuthorizationSuccess, userName, serviceName ));
+            
+            customLog.WriteEntry(String.Format(AuditEvents.UserAuthorizationSuccess, userName,accesTo));
 
 		}
 

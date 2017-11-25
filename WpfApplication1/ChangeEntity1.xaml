@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApplication1.ChangeEntity1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Change Entity" Height="326" Width="340">
+    <Grid Margin="0,0,20,3">
+        <Label x:Name="label" Content="Enter ID:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Margin="188,29,0,0" VerticalAlignment="Top" Width="75" Click="button_Search"/>
+        <TextBox x:Name="tb_id1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" Margin="95,28,0,0"/>
+        <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="1,3,1,5" Margin="10,68,10,54"/>
+        <StackPanel Margin="10,68,37,63">
+        </StackPanel>
+        <Label x:Name="label_Copy" Content="ID:" HorizontalAlignment="Left" Margin="16,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.083,2.423"/>
+        <Label x:Name="label_Copy1" Content="Ime:" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_prz" Content="Prezime:" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" Margin="95,82,0,0"/>
+        <TextBox x:Name="tb_ime" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" Margin="95,119,0,0"/>
+        <Label x:Name="label_potrosnja" Content="Potrosnja:" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_prz" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" Margin="95,162,0,0"/>
+        <TextBox x:Name="tb_potrsnja" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="71" Margin="95,196,0,0"/>
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Margin="188,250,0,0" VerticalAlignment="Top" Width="75" Click="exit_Click"/>
+        <Button x:Name="ok_b" Content="Save Entity" HorizontalAlignment="Left" Margin="49,250,0,0" VerticalAlignment="Top" Width="75" Click="ok_b_Click" RenderTransformOrigin="-1.213,0.636"/>
+
+    </Grid>
+</Window>

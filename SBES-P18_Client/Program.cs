@@ -14,25 +14,21 @@ namespace SBES_P18_Client
             ChannelFactory<ILoadBalancerService> factory = new ChannelFactory<ILoadBalancerService>(typeof(ILoadBalancerService).ToString());
 
             ILoadBalancerService proxy = factory.CreateChannel();
-            Brojilo br = new Brojilo("123", "Niki", "Velickovic", "666");
-            proxy.AddEntyty(br);
+              Brojilo br = new Brojilo("123", "Niki", "Velickovic", "666");
+            //proxy.AddEntyty(br);
 
-         
-            User u = new User("nikola023", "xxx", EnumType.Administrator);
+            // double x = proxy.Process_Id(666);
+            double x;
+          //  Console.WriteLine("Vas racun za struju  iznosi : {0}",x);
 
-            if (proxy.Login(u))
-            {
-                Console.WriteLine("Korisnik {0} se uspesno ulogovao", u.Username);
-            }
-            else
-            {
+           //  x = proxy.Process_Id(666);
+           // Console.WriteLine("Vas racun za struju  iznosi : {0}", x);
+            int t = 0;
 
-                Console.WriteLine("Korisnik {0}  nije uspeo da se uloguje", u.Username);
-
-            }
-
-            bool x=  proxy.RemoveEntyty(br);
-
+                x = proxy.Process_Id(666);
+                t++;
+                Console.WriteLine(t);
+            
             Console.ReadKey();
         }
     }

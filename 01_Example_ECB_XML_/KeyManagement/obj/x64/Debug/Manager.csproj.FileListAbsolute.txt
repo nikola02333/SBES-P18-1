@@ -1,0 +1,24 @@
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\KeyManagement\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.pdb
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.dll
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\obj\x64\Debug\Manager.csprojResolveAssemblyReference.cache
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\obj\x64\Debug\Manager.csproj.CoreCompileInputs.cache
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.dll
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.dll
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.dll
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\KeyManagement\obj\x64\Debug\KeyManagement.pdb

@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Brojilo.cs" />
     <Compile Include="EnumType.cs" />
+    <Compile Include="ILBService.cs" />
     <Compile Include="ILoadBalancerService.cs" />
     <Compile Include="LBdatamap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

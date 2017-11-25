@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApplication1.DeleteEntity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Delete Entity" Height="227.176" Width="296.872">
+    <Grid Margin="10,0,2,0">
+        <Button x:Name="B1" Content="Delete Entyty" HorizontalAlignment="Left" Margin="29,124,0,0" VerticalAlignment="Top" Width="81" Click="DeleteEntityB"/>
+        <Button x:Name="exit" Content="exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="160,124,0,0" RenderTransformOrigin="0.49,0.104" Click="exit_Click"/>
+
+        <Border Background="GhostWhite" BorderBrush="DodgerBlue" BorderThickness="1,3,1,5" Margin="10,70,10,83"/>
+        <StackPanel Margin="10,70,42,0" Height="44" VerticalAlignment="Top">
+        </StackPanel>
+        <Label x:Name="labelID" Content="ID:" HorizontalAlignment="Left" Margin="24,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.212"/>
+        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="22" Margin="53,77,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182"/>
+
+
+    </Grid>
+</Window>

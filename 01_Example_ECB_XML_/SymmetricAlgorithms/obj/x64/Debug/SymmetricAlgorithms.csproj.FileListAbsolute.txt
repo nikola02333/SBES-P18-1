@@ -1,0 +1,43 @@
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.csprojResolveAssemblyReference.cache
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.csproj.CoreCompileInputs.cache
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\FAKS\Nastava\PSI II blok 4 godina - 2016\Vjezbe 2014\Vezbe\01 Kriptografija - 1\Materijal\01 Exercise\Examples\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe.config
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\Administrator.P05-06\Desktop\Nikola\04\Vezba_Template\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe.config
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\SIgurnost i Bezbednos\04 Vezba\04\1_zad\01_Example_ECB\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+H:\Kriptografija\01_Example_ECB_XML_\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe.config
+H:\Kriptografija\01_Example_ECB_XML_\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+H:\Kriptografija\01_Example_ECB_XML_\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb

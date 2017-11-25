@@ -1,0 +1,5 @@
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\KeyManagement\obj\x64\Debug\KeyManagement.pdb

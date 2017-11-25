@@ -36,7 +36,7 @@ namespace SecurityManager
 			get { return this.identity; }
 		}
 
-		public bool IsInRole(string role)
+		public  bool IsInRole(string role)
 		{
 			bool IsAuthz = false;
 			foreach(string[] r in roles.Values)

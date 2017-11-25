@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.ServiceModel;
 using Common;
-
+using System.Threading;
+using SecurityManager;
+using System.IdentityModel.Policy;
+using System.ServiceModel.Description;
 
 namespace SBES_P18_Server
 {
@@ -13,25 +16,30 @@ namespace SBES_P18_Server
         private static Dictionary<object, object> D;
         private static ServiceHost loadBalancer = null;
         private static ServiceHost wokerService = null;
-
+        static IWorkerService workerChannel;
         public static void  Start()
         {
             // http://localhost:???/LoadBalancerService
-            //loadBalancer = new ServiceHost(typeof(LoadBalancerService));
+            loadBalancer = new ServiceHost(typeof(LoadBalancerService));
+            RolesConfig rc = new RolesConfig();
+            loadBalancer.Authorization.ServiceAuthorizationManager = new CustomAuthorizationManager();
 
-          //  loadBalancer.Open();
-         //   Console.WriteLine("Load Balancer server is running...");
-            //
+            List<IAuthorizationPolicy> policies = new List<IAuthorizationPolicy>();
+            policies.Add(new CustomAuthorizationPolicy());
+            loadBalancer.Authorization.ExternalAuthorizationPolicies = policies.AsReadOnly();
+
+            loadBalancer.Authorization.PrincipalPermissionMode = PrincipalPermissionMode.Custom;
+
+            loadBalancer.Description.Behaviors.Remove(typeof(ServiceDebugBehavior));
+            loadBalancer.Description.Behaviors.Add(new ServiceDebugBehavior() { IncludeExceptionDetailInFaults = true });
+            loadBalancer.Open();
+            
             wokerService = new ServiceHost(typeof(WorkerLB));
 
             wokerService.Open();
             Console.WriteLine("Load Balancer server is running...");
-
         }
-
-
-
-
+       
         public static void Stop()
         {
             loadBalancer.Close();
@@ -40,12 +48,9 @@ namespace SBES_P18_Server
         {
 
             Start();
-            var CLB = new Queue<int>(100);  //Queue sa ID-evima korisnika koji zele obradu podataka
+            
 
-            Dictionary<int, int> LBW = new Dictionary<int, int>(100);//Dictionary sa ID i potrosnjom  koji se salje workerima
-
-
-
+         
 
             Console.ReadKey();
 

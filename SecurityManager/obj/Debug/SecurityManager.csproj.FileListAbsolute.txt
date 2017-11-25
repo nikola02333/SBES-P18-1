@@ -31,3 +31,10 @@ C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\Se
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.dll
 C:\Users\Administrator.P05-03\Desktop\SBES-P18-RBAC\SecurityManager\obj\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\bin\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\bin\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\obj\Debug\SecurityManager.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\obj\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\obj\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\obj\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SecurityManager\obj\Debug\SecurityManager.pdb

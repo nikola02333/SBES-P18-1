@@ -52,6 +52,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -72,10 +73,6 @@
       <Project>{52769eb6-a053-4e41-ad97-ed09125c9f7a}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ILBService\ILBService.csproj">
-      <Project>{fd032cc7-44e8-4410-9de2-ff363cc6381a}</Project>
-      <Name>ILBService</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SecurityManager\SecurityManager.csproj">
       <Project>{E41D356E-A8A3-4C09-B69F-FEBCB79C11B9}</Project>
       <Name>SecurityManager</Name>
@@ -87,6 +84,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Brojila>
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBrojilo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Brojilo>
-    <Id>123</Id>
-    <Ime>Niki</Ime>
-    <Prezime>Velickovic</Prezime>
-    <Potrosnja>666</Potrosnja>
+    <Id>968</Id>
+    <Ime>Puskic</Ime>
+    <Prezime>nikic</Prezime>
+    <Potrosnja>65</Potrosnja>
   </Brojilo>
   <Brojilo>
     <Id>123</Id>
@@ -12,10 +12,4 @@
     <Prezime>Velickovic</Prezime>
     <Potrosnja>666</Potrosnja>
   </Brojilo>
-  <Brojilo>
-    <Id>123</Id>
-    <Ime>Niki</Ime>
-    <Prezime>Velickovic</Prezime>
-    <Potrosnja>666</Potrosnja>
-  </Brojilo>
-</Brojila>
+</ArrayOfBrojilo>
