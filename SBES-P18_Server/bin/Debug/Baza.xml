@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBrojilo>
+  <Brojilo>
+    <Id>187</Id>
+    <Ime>Petko</Ime>
+    <Prezime>Petrovic</Prezime>
+    <Potrosnja>658</Potrosnja>
+  </Brojilo>
+  <Brojilo>
+    <Id>123</Id>
+    <Ime>Niki</Ime>
+    <Prezime>Velickovic</Prezime>
+    <Potrosnja>666</Potrosnja>
+  </Brojilo>
+  <Brojilo>
+    <Id>666</Id>
+    <Ime>petar</Ime>
+    <Prezime>petkovic</Prezime>
+    <Potrosnja>54</Potrosnja>
+  </Brojilo>
+</ArrayOfBrojilo>

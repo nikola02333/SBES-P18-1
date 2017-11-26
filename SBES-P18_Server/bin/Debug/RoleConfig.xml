@@ -1,0 +1,17 @@
+<Configuration> 
+<Client>
+    <execute>true</execute>
+	<modify>false</modify>
+	<addentity>false</addentity>
+  </Client>
+  <Operator>
+   <execute>true</execute>
+	<modify>true</modify>
+	<addentity>false</addentity>
+  </Operator>
+  <Administrator>
+   <execute>true</execute>
+	<modify>true</modify>
+	<addentity>true</addentity>
+	</Administrator>
+</Configuration>

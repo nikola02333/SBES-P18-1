@@ -86,7 +86,7 @@ namespace WpfApplication1
                 }
                else
                 {
-                    MessageBox.Show("Nisam uspeo da izmeni entitet");
+                    MessageBox.Show("Nisam uspeo da izmeniti entitet");
                 }
             }
         }

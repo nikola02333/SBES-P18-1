@@ -20,3 +20,14 @@ C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\obj\Deb
 C:\Users\Administrator.P05-02\Desktop\SBES-P18-master19-11 - Copy\Worker\obj\Debug\Worker.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Worker.exe.config
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Worker.exe
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Worker.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Common.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SBES-P18_Server.exe
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SecurityManager.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Common.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SBES-P18_Server.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SecurityManager.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.exe
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.pdb

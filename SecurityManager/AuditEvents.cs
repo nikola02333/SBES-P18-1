@@ -10,10 +10,12 @@ namespace SecurityManager
 {
 	public enum AuditEventTypes
 	{
-		UserAuthenticationSuccess = 0,
-		UserAuthorizationSuccess = 1,
-		UserAuthorizationFailed = 2
-	}
+        DOS_attack_report=0,
+        UserAuthenticationSuccess = 1,
+		UserAuthorizationSuccess = 2,
+		UserAuthorizationFailed = 3,
+        
+    }
 
 	public class AuditEvents
 	{
@@ -37,7 +39,15 @@ namespace SecurityManager
         /// <summary>
         /// ode u resursni fajl i vraca user{0} je autentifikovan
         /// </summary>
-		public static string UserAuthenticationSuccess
+
+        public static string DOS_attack_report
+        {
+            get
+            {
+                return ResourceMgr.GetString(AuditEventTypes.DOS_attack_report.ToString());
+            }
+        }
+        public static string UserAuthenticationSuccess
 		{
 			get
 			{

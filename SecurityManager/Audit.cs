@@ -11,8 +11,8 @@ namespace SecurityManager
 	{
 		
 		private static EventLog customLog = null;
-		const string SourceName = "nikola";
-		const string LogName = "Velickovic";
+		const string SourceName = "nikola023";
+		const string LogName = "LogLb";
 
 		static Audit()
 		{
@@ -38,19 +38,29 @@ namespace SecurityManager
         /// customlog.
         /// </summary>
         /// <param name="userName"></param>
+        public static void Dos_Attack_Report()
+        {
+            // string UserAuthenticationSuccess -> read string format from .resx file
+            if (customLog != null)
+            {
+
+                // string message -> create message based on UserAuthenticationSuccess and params
+                // write message in customLog, EventLogEntryType is Information or SuccessAudit 
+
+                customLog.WriteEntry(String.Format(AuditEvents.DOS_attack_report));
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.", (int)AuditEventTypes.UserAuthenticationSuccess));
+            }
+        }
 
         public static void AuthenticationSuccess(string userName)
 		{
 			// string UserAuthenticationSuccess -> read string format from .resx file
 			if (customLog != null)
 			{
-
-                // string message -> create message based on UserAuthenticationSuccess and params
-                // write message in customLog, EventLogEntryType is Information or SuccessAudit 
-
                 customLog.WriteEntry(String.Format(AuditEvents.UserAuthenticationSuccess, userName));
-
-                
 			}
 			else
 			{
