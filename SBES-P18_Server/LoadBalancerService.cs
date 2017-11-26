@@ -18,6 +18,8 @@ namespace SBES_P18_Server
     public class LoadBalancerService : ILoadBalancerService
     {
         static string[] _listID = new string[15];
+        static string[] Block_listID = new string[15];
+
         static int id_counter = 0;
         static int IDS2( string[] elements)
         {
@@ -312,12 +314,18 @@ namespace SBES_P18_Server
                  x = GetPotrosnja(id_Brojila);
                 _listID[id_counter] = OperationContext.Current.SessionId;
                 id_counter++;
-                int doos = IDS2(_listID);
-                if (doos == 3)
+                int z = IDS2(_listID);
+
+                if (IDS2(_listID) == 3)
                 {
+                    
                     Console.WriteLine("Prijavljujem DooS napad");
                     Audit.Dos_Attack_Report(principal.Identity.Name);
+                    _listID = new string[15];
+                    id_counter = 0;
                     // ovde pozvati IPS , koji ce samo blokirati ovaj SessionID :D i cao zdravoo poyyy
+
+
                 }
                 Console.WriteLine(OperationContext.Current.SessionId);
                 Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.execute.ToString());  
