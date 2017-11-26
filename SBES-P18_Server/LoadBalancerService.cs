@@ -316,7 +316,7 @@ namespace SBES_P18_Server
                 if (doos == 3)
                 {
                     Console.WriteLine("Prijavljujem DooS napad");
-                    Audit.Dos_Attack_Report();
+                    Audit.Dos_Attack_Report(principal.Identity.Name);
                     // ovde pozvati IPS , koji ce samo blokirati ovaj SessionID :D i cao zdravoo poyyy
                 }
                 Console.WriteLine(OperationContext.Current.SessionId);

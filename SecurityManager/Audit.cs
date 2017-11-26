@@ -38,7 +38,7 @@ namespace SecurityManager
         /// customlog.
         /// </summary>
         /// <param name="userName"></param>
-        public static void Dos_Attack_Report()
+        public static void Dos_Attack_Report(string username)
         {
             // string UserAuthenticationSuccess -> read string format from .resx file
             if (customLog != null)
@@ -47,7 +47,7 @@ namespace SecurityManager
                 // string message -> create message based on UserAuthenticationSuccess and params
                 // write message in customLog, EventLogEntryType is Information or SuccessAudit 
 
-                customLog.WriteEntry(String.Format(AuditEvents.DOS_attack_report));
+                customLog.WriteEntry(string.Format(AuditEvents.DOS_attack_report,username));
             }
             else
             {

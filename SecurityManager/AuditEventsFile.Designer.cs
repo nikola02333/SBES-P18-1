@@ -61,7 +61,7 @@ namespace SecurityManager {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  DOS attack !!!.
+        ///   Looks up a localized string similar to  DOS attack !!! by User {0}.
         /// </summary>
         internal static string DOS_attack_report {
             get {

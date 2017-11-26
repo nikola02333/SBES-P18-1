@@ -24,11 +24,12 @@ namespace SBES_P18_Client
            //  x = proxy.Process_Id(666);
            // Console.WriteLine("Vas racun za struju  iznosi : {0}", x);
             int t = 0;
-
+            while (t < 5)
+            {
                 x = proxy.Process_Id(666);
                 t++;
                 Console.WriteLine(t);
-            
+            }
             Console.ReadKey();
         }
     }
