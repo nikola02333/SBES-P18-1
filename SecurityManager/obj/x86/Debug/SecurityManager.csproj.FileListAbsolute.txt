@@ -5,3 +5,10 @@ C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\SecurityManager\obj\x86\Debug\Securi
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.csproj.GenerateResource.Cache
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.dll
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\bin\x86\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\bin\x86\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.AuditEventsFile.resources
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.csproj.GenerateResource.Cache
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SecurityManager\obj\x86\Debug\SecurityManager.csprojResolveAssemblyReference.cache

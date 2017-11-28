@@ -90,8 +90,8 @@ namespace SecurityManager
 			switch (role)
 			{
                 case "Client" : return ClientPermissions;
-                case "Operator": return OperatorPermissions;
-				case "Administrator023": return AdministratorPermissions;
+                case "ooo": return OperatorPermissions;
+				case "ppp": return AdministratorPermissions;
 				default: return Empty;
 			}
 		}

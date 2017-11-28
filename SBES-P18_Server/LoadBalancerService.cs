@@ -88,6 +88,7 @@ namespace SBES_P18_Server
 
                         Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.addentity.ToString());  // zeraja  je stavio za servis
                         return true;
+
                     }
                    catch(Exception e)
                   {
@@ -108,6 +109,7 @@ namespace SBES_P18_Server
             }
             Console.WriteLine("Zavrsio sam sa upisivanjem podataka u fajl.");
             return true;
+
         }
         public bool RemoveEntyty(int id_counter)
         {
@@ -131,9 +133,10 @@ namespace SBES_P18_Server
         public bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-            
-            if (principal.IsInRole(Permissions.addentity.ToString()))
+
+            if (principal.IsInRole(Permissions.addentity.ToString()) || principal.IsInRole(Permissions.modify.ToString()))
             {
+
                 List<Brojilo> couters = ReadXMLCounters();
                 foreach (var item in couters)
                 {
@@ -142,10 +145,20 @@ namespace SBES_P18_Server
                         item.Id = counterNew.Id;
                         item.Potrosnja = counterNew.Potrosnja;
                         item.Ime = counterNew.Ime;
+                        item.Prezime = counterNew.Prezime;
                     }
                 }
                 SaveCountersToXml(couters);
-                Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.modify.ToString()); 
+                //provera da li je administator ili operator izvrsio navedene promene
+                if (principal.IsInRole(Permissions.modify.ToString()))
+                {
+                    Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.modify.ToString());
+                }
+                else
+                {
+                    Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.modify.ToString());
+                }
+                
             }
             return true;
         }
@@ -309,7 +322,7 @@ namespace SBES_P18_Server
         {
             double x=0;
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-            if (principal.IsInRole(Permissions.addentity.ToString()))
+            if (principal.IsInRole(Permissions.execute.ToString()))
             {
                  x = GetPotrosnja(id_Brojila);
                 _listID[id_counter] = OperationContext.Current.SessionId;

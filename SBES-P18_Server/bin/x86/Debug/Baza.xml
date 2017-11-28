@@ -7,9 +7,9 @@
     <Potrosnja>65</Potrosnja>
   </Brojilo>
   <Brojilo>
-    <Id>123</Id>
-    <Ime>Niki</Ime>
-    <Prezime>Velickovic</Prezime>
-    <Potrosnja>666</Potrosnja>
+    <Id>1234</Id>
+    <Ime>Piskic</Ime>
+    <Prezime>jelradi?</Prezime>
+    <Potrosnja>1</Potrosnja>
   </Brojilo>
 </ArrayOfBrojilo>

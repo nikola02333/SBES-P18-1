@@ -12,3 +12,8 @@ C:\Users\nikola\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\bin\De
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\Manager.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.dll
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\bin\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\bin\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\01_Example_ECB_XML_\KeyManagement\obj\Debug\KeyManagement.pdb

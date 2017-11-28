@@ -46,7 +46,7 @@ namespace WpfApplication1
 				this.AddEntityB.IsEnabled = true;
 				this.DeleteEntityB.IsEnabled = true;
 			}
-            else
+            if(_type== EnumType.Operator)
             {
                 this.ChangeCounterB.IsEnabled = true;
             }

@@ -71,7 +71,7 @@ namespace SymmetricAlgorithms
         }
 		static void Main(string[] args)
 		{
-			/*string xmlFile = "Baza.xml";				//source bitmap file
+			string xmlFile = "Baza.xml";				//source bitmap file
 			string cipherFile = "Ciphered.xml";			//result of encryption
 			string plaintextFile = "Plainxml.xml";		//result of decryption
 			string keyFile = "SecretKey.txt";			//secret key storage
@@ -92,7 +92,7 @@ namespace SymmetricAlgorithms
 			Test_DES_Decrypt(cipherFile, plaintextFile, eSecretKey);
 			///Test_AES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
 			///Test_3DES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
-			Console.WriteLine("Decryption is done.");*/
+			Console.WriteLine("Decryption is done.");
 			Console.ReadLine();
 		}
 	}

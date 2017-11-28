@@ -38,7 +38,7 @@ namespace SymmetricAlgorithms
             DESCryptoServiceProvider desCrypto = new DESCryptoServiceProvider();
 
             desCrypto.Mode = CipherMode.ECB; //
-            desCrypto.Padding = PaddingMode.None; // dopuni nulama ili cime oces 
+            desCrypto.Padding = PaddingMode.Zeros; // dopuni nulama ili cime oces 
             desCrypto.Key = Encoding.ASCII.GetBytes(secretKey);
 
 
@@ -78,7 +78,7 @@ namespace SymmetricAlgorithms
 			DESCryptoServiceProvider desCrpto = new DESCryptoServiceProvider();
 
             desCrpto.Mode = CipherMode.ECB; //
-            desCrpto.Padding = PaddingMode.None; // 
+            desCrpto.Padding = PaddingMode.Zeros; // 
             desCrpto.Key = Encoding.ASCII.GetBytes(secretKey);
 
 

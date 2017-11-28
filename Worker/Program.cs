@@ -16,13 +16,13 @@ namespace Worker
         {
           
             NetTcpBinding myBinding = new NetTcpBinding();
-            EndpointAddress myEndpoint = new EndpointAddress("net.tcp://192.168.0.17:29009/IWorkerLB");
+            EndpointAddress myEndpoint = new EndpointAddress("net.tcp://localhost:29009/IWorkerLB");
             ChannelFactory<IWorkerLB> myChannelFactory = new ChannelFactory<IWorkerLB>(myBinding, myEndpoint);
             IWorkerLB workerChannel = myChannelFactory.CreateChannel();
             
            
            
-           string myIp = "192.168.0.17"; // args[0] 
+           string myIp = "127.0.0.1"; // args[0] 
             string workerServiceURL = workerChannel.Register(myIp);     //ovde puca
 
 

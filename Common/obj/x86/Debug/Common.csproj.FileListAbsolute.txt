@@ -16,3 +16,7 @@ C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\Common\bin\x86\Debug\Common.pdb
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\Common\obj\x86\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\Common\obj\x86\Debug\Common.dll
 C:\Users\nikola\Desktop\WCF_Duplex\SBES-P18\Common\obj\x86\Debug\Common.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\Common\bin\x86\Debug\Common.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\Common\bin\x86\Debug\Common.pdb
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\Common\obj\x86\Debug\Common.dll
+C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\Common\obj\x86\Debug\Common.pdb
