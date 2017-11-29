@@ -44,8 +44,9 @@ namespace SBES_P18_Server
         static void Main(string[] args)
         {
             Start();
-            Console.WriteLine("Unesite (1) za EBC enkripciju/dekripciju ili (2) za CBC enkripciju/dekripciju");
-           /* string opcija = Console.ReadLine();
+           /* Console.WriteLine("Unesite (1) za EBC enkripciju/dekripciju ili (2) za CBC enkripciju/dekripciju");
+          
+           string opcija = Console.ReadLine();
             if(opcija =="1")
             {
                 SymmetricAlgorithmsCBC.Program.StartCBC();
