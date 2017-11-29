@@ -12,8 +12,19 @@ namespace SBES_P18_Server
     public class WorkerInformations
     {
 
-        public bool Free { get; set; }
-
+        private long free;
+        public bool Free
+        {
+            get
+            {
+                Interlocked.Read(ref free);
+                return free == 1L;
+            }
+            set
+            {
+                Interlocked.Exchange(ref free, value ? 1 : 0);  //uslovna dodela
+            }
+        }
         /// <summary>
         /// Provides (non-thread-safe) access to the backing value
         /// </summary>

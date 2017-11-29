@@ -20,15 +20,10 @@ namespace Worker
             ChannelFactory<IWorkerLB> myChannelFactory = new ChannelFactory<IWorkerLB>(myBinding, myEndpoint);
             IWorkerLB workerChannel = myChannelFactory.CreateChannel();
             
-           
-           
            string myIp = "127.0.0.1"; // args[0] 
-            string workerServiceURL = workerChannel.Register(myIp);     //ovde puca
-
-
+            string workerServiceURL = workerChannel.Register(myIp);   
             Uri baseAddress = new Uri(workerServiceURL);
    
-
             using (ServiceHost serviceHost = new ServiceHost(typeof(WorkerService), baseAddress))
             {
                 serviceHost.AddServiceEndpoint(typeof(IWorkerService), new NetTcpBinding(), workerServiceURL);

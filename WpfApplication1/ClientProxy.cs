@@ -47,16 +47,6 @@ namespace WpfApplication1
             return result;
         }
 
-        public bool ChangeIdBrojila(string newId, string oldId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool ChangeValueBrojila(string id, string potrosnja)
-        {
-            throw new NotImplementedException();
-        }
-
         public EnumType Detekcija()
         {
           return  factory.Detekcija();

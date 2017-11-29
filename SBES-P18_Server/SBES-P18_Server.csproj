@@ -69,6 +69,10 @@
     <Compile Include="WorkerLB.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\01_Example_ECB_XML_\SymmetricAlgorithms\SymmetricAlgorithms.csproj">
+      <Project>{7e54ed96-95f3-4c72-ba89-4b582778df48}</Project>
+      <Name>SymmetricAlgorithms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{52769eb6-a053-4e41-ad97-ed09125c9f7a}</Project>
       <Name>Common</Name>

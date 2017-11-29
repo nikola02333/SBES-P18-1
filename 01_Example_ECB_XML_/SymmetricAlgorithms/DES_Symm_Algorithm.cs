@@ -20,19 +20,9 @@ namespace SymmetricAlgorithms
 		/// <param name="secretKey"> symmetric encryption key </param>
 		public static void EncryptFile(string inFile, string outFile, string secretKey)
 		{
-			byte[] header = null;	//image header (54 byte) should not be encrypted
-			byte[] body = null;     //image body to be encrypted
-
-            // byte[] image = ImageHelper.ImageToByteArray(Image.FromFile(inFile)); ne radi 
-            // koristimo ovo 
-            // File.ReadAllBytes(inFile)
+			
+            
             byte[] xmlfile = File.ReadAllBytes(inFile);
-
-           //Formatter.Decompose(xmlfile, out body);
-            // body se menja ,
-            // decompose  vraca heder i main 
-            /// .out - salje po referenci
-            /// 
 
 
             DESCryptoServiceProvider desCrypto = new DESCryptoServiceProvider();
@@ -51,7 +41,7 @@ namespace SymmetricAlgorithms
 
             cryptoStream.Write(xmlfile, 0, xmlfile.Length); // moj kstrim upisati 
           //cryptoStream.Write(header, 0, header.Length);  
-            //cryptoStream.FlushFinalBlock();
+            cryptoStream.FlushFinalBlock();
 
             // u memoristrim se nalazi
             //u body se nalazi 

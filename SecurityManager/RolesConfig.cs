@@ -91,7 +91,7 @@ namespace SecurityManager
 			{
                 case "Client" : return ClientPermissions;
                 case "ooo": return OperatorPermissions;
-				case "ppp": return AdministratorPermissions;
+				case "Administrator023": return AdministratorPermissions;
 				default: return Empty;
 			}
 		}

@@ -31,6 +31,7 @@ namespace WpfApplication1
         public void Start()
         {
             NetTcpBinding binding = new NetTcpBinding();
+            //192.168.0.17 - komp
             string address = "net.tcp://localhost:65000/ILoadBalancerService";
           
             proxy = new ClientProxy(binding, new EndpointAddress(new Uri(address)));

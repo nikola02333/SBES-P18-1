@@ -13,10 +13,6 @@ namespace Common
         [OperationContract]
         bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld);
         [OperationContract]
-        bool ChangeValueBrojila(string id, string potrosnja);
-        [OperationContract]
-        bool ChangeIdBrojila(string newId, string oldId);
-        [OperationContract]
         double Process_Id(int id_Brojila);
 		[OperationContract]
         EnumType Detekcija();

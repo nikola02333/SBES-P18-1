@@ -13,13 +13,10 @@ namespace SBES_P18_Server
 {
     class Program
     {
-        private static Dictionary<object, object> D;
         private static ServiceHost loadBalancer = null;
         private static ServiceHost wokerService = null;
-        static IWorkerService workerChannel;
         public static void  Start()
         {
-            // http://localhost:???/LoadBalancerService
             loadBalancer = new ServiceHost(typeof(LoadBalancerService));
             RolesConfig rc = new RolesConfig();
             loadBalancer.Authorization.ServiceAuthorizationManager = new CustomAuthorizationManager();
@@ -46,14 +43,18 @@ namespace SBES_P18_Server
         }
         static void Main(string[] args)
         {
-
             Start();
-            
+            Console.WriteLine("Unesite (1) za EBC enkripciju/dekripciju ili (2) za CBC enkripciju/dekripciju");
+             string opcija = Console.ReadLine();
+            if(opcija =="1")
+            {
+                SymmetricAlgorithms.Program.Start2();
+            }
+            else
+            {
 
-         
-
+            }
             Console.ReadKey();
-
             Stop();
         }
     }

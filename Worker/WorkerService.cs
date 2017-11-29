@@ -32,14 +32,12 @@ namespace Worker
 
         public double GetPrice(string pot)
         {
-            //string to int
             int potrosnja = Int32.Parse(pot);
             List<Tarife> lt = ReadXMLTarife();
             Console.WriteLine("Obradjujem proracun...");
             double cena=0;
             for(int i=0; i<lt.Count(); i++)
             {
-
                 if (potrosnja > lt[i].GG)
                 {
                     cena += (lt[i].GG - lt[i].DG) * lt[i].Cena;
@@ -49,7 +47,6 @@ namespace Worker
                     cena += (potrosnja - lt[i].DG) * lt[i].Cena;
                 }               
             }
-          
             return cena;
         }
 

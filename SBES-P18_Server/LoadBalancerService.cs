@@ -12,6 +12,7 @@ using System.ServiceModel;
 using System.Threading;
 using System.Collections.Concurrent;
 using SecurityManager;
+using System.ServiceModel.Channels;
 
 namespace SBES_P18_Server
 {
@@ -19,9 +20,9 @@ namespace SBES_P18_Server
     {
         static string[] _listID = new string[15];
         static string[] Block_listID = new string[15];
-
         static int id_counter = 0;
-        static int IDS2( string[] elements)
+        static int block_id_counter = 0;
+        static int IDS( string[] elements)
         {
             int occurances = 0;
             int count = 1;
@@ -41,7 +42,17 @@ namespace SBES_P18_Server
             }
             return occurances;
     }
+        public static bool IPS(string ip)
+        {
+            if (Block_listID.Contains(ip))
+            {
+                return true;
+            }
+            else
+                return false;
 
+        }
+        #region Entyty
         public bool AddEntyty(Brojilo brojilo)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -71,8 +82,6 @@ namespace SBES_P18_Server
                 }
                 else
                 {
-                    try
-                    { 
                         XDocument xDocument = XDocument.Load("Baza.xml");
                         XElement root = xDocument.Element("ArrayOfBrojilo");
                         IEnumerable<XElement> rows = root.Descendants("Brojilo");
@@ -86,21 +95,8 @@ namespace SBES_P18_Server
                            ));
                         xDocument.Save("Baza.xml");
 
-                        Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.addentity.ToString());  // zeraja  je stavio za servis
+                        Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.addentity.ToString()); 
                         return true;
-
-                    }
-                   catch(Exception e)
-                  {
-                        //  treba prepraviti da Dekripcija vrati List-u brojila , da se doda i onda  opet enkriptuje
-
-                        //SymmetricAlgorithms.Program.Start();
-                           
-                  }
-                   
-
-
-
                 }
             }
             else
@@ -113,21 +109,32 @@ namespace SBES_P18_Server
         }
         public bool RemoveEntyty(int id_counter)
         {
-            bool success_remove = false;
-            List<Brojilo> counters = new List<Brojilo>();
-            counters = ReadXMLCounters();
-            try
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            /// audit both successfull and failed authorization checks
+            if (principal.IsInRole(Permissions.addentity.ToString()))
             {
-                var itemToRemove = counters.Single(r => r.Id == id_counter.ToString());
-                success_remove = counters.Remove(itemToRemove);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+                bool success_remove = false;
+                List<Brojilo> counters = new List<Brojilo>();
+                counters = ReadXMLCounters();
+                try
+                {
+                    var itemToRemove = counters.Single(r => r.Id == id_counter.ToString());
+                    success_remove = counters.Remove(itemToRemove);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
-            SaveCountersToXml(counters);
-            return success_remove; 
+                SaveCountersToXml(counters);
+              
+                Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.addentity.ToString());  
+                return success_remove;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool ChangeEntyty(Brojilo counterNew, Brojilo counterOld)
@@ -149,7 +156,6 @@ namespace SBES_P18_Server
                     }
                 }
                 SaveCountersToXml(couters);
-                //provera da li je administator ili operator izvrsio navedene promene
                 if (principal.IsInRole(Permissions.modify.ToString()))
                 {
                     Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.modify.ToString());
@@ -162,51 +168,9 @@ namespace SBES_P18_Server
             }
             return true;
         }
+        #endregion 
 
-        public bool ChangeValueBrojila(string id, string potrosnja)
-        {
-            bool changed = false;
-            Brojilo counter = new Brojilo();
-            int id1 = Int32.Parse(id);
-            counter = ReadCounterFromXml(id1);
-            counter.Potrosnja = potrosnja;
-            changed = true;
 
-            List<Brojilo> listCounters = new List<Brojilo>();
-
-            listCounters = ReadXMLCounters();
-            listCounters.Add(counter);
-
-            SaveCountersToXml(listCounters);
-
-            return changed;
-        }
-        public bool ChangeIdBrojila(string newId, string oldId)
-        {
-            bool changed = false;
-            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-            if (principal.IsInRole(Permissions.addentity.ToString()))
-            {
-                Brojilo counter = new Brojilo();
-                int stariId = Int32.Parse(oldId);
-                counter = ReadCounterFromXml(stariId);
-                counter.Id = newId;
-                changed = true;
-
-                List<Brojilo> listCounters = new List<Brojilo>();
-
-                listCounters = ReadXMLCounters();
-                listCounters.Add(counter);
-
-                SaveCountersToXml(listCounters);
-                Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.modify.ToString());
-            }
-            else
-            {
-                Audit.AuthorizationFailed(principal.Identity.Name, Environment.MachineName, "nema pravo pristupa");
-            }
-            return changed;
-        }
         #region ReadXMl
         public List<Brojilo> ReadXMLCounters()
         {
@@ -221,19 +185,6 @@ namespace SBES_P18_Server
             return dezerializedList;
         }
 
-        public List<User> ReadXMLUsers()
-        {
-            XmlRootAttribute xRoot = new XmlRootAttribute();
-            xRoot.ElementName = "ArrayOfUsers";
-            XmlSerializer serializer = new XmlSerializer(typeof(List<User>), xRoot);
-            List<User> dezerializedList = new List<User>();
-
-            using (FileStream stream = File.OpenRead("Users.xml"))
-            {
-                dezerializedList = (List<User>)serializer.Deserialize(stream);
-            }
-            return dezerializedList;
-        }
         public Brojilo ReadCounterFromXml(int id)
         {
             Brojilo br = null;
@@ -260,49 +211,36 @@ namespace SBES_P18_Server
                 xmlSerializer.Serialize(streamWriter, serializedList);
             }
         }
-        public void SaveEntityToXml(List<User> dezerializedList)
-        {
-            XmlRootAttribute xRoot = new XmlRootAttribute();
-            xRoot.ElementName = "ArrayOfUsers";
-            xRoot.IsNullable = true;
-            XmlSerializer serializer = new XmlSerializer(typeof(List<User>), xRoot);
-            using (FileStream stream = File.OpenWrite("Users.xml"))
-            {
-                serializer.Serialize(stream, dezerializedList);
-            }
-        }
         /// <summary>
         /// //////////////////////////////
         /// </summary>
         /// <returns></returns>
-        private int workerCounter = 0;
         public double GetPotrosnja(int id)
         {
-           Brojilo counter = ReadCounterFromXml(id);
+            double cena = 0;
+           
+            Brojilo counter = ReadCounterFromXml(id);
             do
             {
                 foreach (var keyValuePair in WorkerLB.workers)
                 {
-                    double cena = 0; // ako je cena nula, onda znaci da taj ID ne postoji u bazi 
-                   //  vrednost Free-a je false , a treba da bude na true
                     if (keyValuePair.Value.Free)
                     {
                         keyValuePair.Value.Free = false;
                         IWorkerService workerChannel  = getChannelToWorker(keyValuePair.Value);
                         try
                         {
-                             cena = workerChannel.GetPrice(counter.Potrosnja);    //Sva logika za getPrice
+                        cena = workerChannel.GetPrice(counter.Potrosnja);
                         }
                         catch (Exception e)
                         {
                             Console.WriteLine(e.Message);
                         }
-                        keyValuePair.Value.Free = true; // oznacimo ga kao slobodnog 
-                       return cena;
+                      //  Thread.Sleep(5000);
+                        keyValuePair.Value.Free = true;
+                        return cena;
                     }
                 }
-                Thread.Sleep(1000);
-
             } while (true);
         }
       
@@ -324,24 +262,33 @@ namespace SBES_P18_Server
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             if (principal.IsInRole(Permissions.execute.ToString()))
             {
-                 x = GetPotrosnja(id_Brojila);
-                _listID[id_counter] = OperationContext.Current.SessionId;
+                x = GetPotrosnja(id_Brojila);
+                ///
+                OperationContext context = OperationContext.Current;
+                MessageProperties prop = context.IncomingMessageProperties;
+                RemoteEndpointMessageProperty endpoint =
+                prop[RemoteEndpointMessageProperty.Name] as RemoteEndpointMessageProperty;
+                string ip = endpoint.Address;
+                ///
+                // _listID[id_counter] = OperationContext.Current.SessionId;
+                _listID[id_counter] = ip;
                 id_counter++;
-                int z = IDS2(_listID);
-
-                if (IDS2(_listID) == 3)
+                if (IPS(ip)) // sad pogledaj da li ta ip adresa je na crnoj listi , ako jeste prekini  izvrsavanje!!!
                 {
-                    
+                    return 0; // prekini operaciju !!!
+                }
+                int z = IDS(_listID);
+                if (IDS(_listID) == 3)
+                {
                     Console.WriteLine("Prijavljujem DooS napad");
                     Audit.Dos_Attack_Report(principal.Identity.Name);
                     _listID = new string[15];
+                    Block_listID[block_id_counter] = ip;
+                    block_id_counter++;
                     id_counter = 0;
-                    // ovde pozvati IPS , koji ce samo blokirati ovaj SessionID :D i cao zdravoo poyyy
-
-
                 }
-                Console.WriteLine(OperationContext.Current.SessionId);
-                Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.execute.ToString());  
+                
+                Audit.AuthorizationSuccess(principal.Identity.Name, Permissions.execute.ToString());
             }
             return x;
         }

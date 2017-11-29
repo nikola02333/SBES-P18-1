@@ -63,10 +63,8 @@
     <Compile Include="EnumType.cs" />
     <Compile Include="ILBService.cs" />
     <Compile Include="ILoadBalancerService.cs" />
-    <Compile Include="LBdatamap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tarife.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -52,26 +52,35 @@ namespace SymmetricAlgorithms
 
 		#endregion
 
-		public static void Start()
+		
+        public static void Start2()
         {
-
-            string myFileName = @"C:\Documents and Settings\user\Desktop\xxx.txt";
-
+            string xmlFile = "Baza.xml";                //source bitmap file
             string cipherFile = "Ciphered.xml";         //result of encryption
             string plaintextFile = "Plainxml.xml";      //result of decryption
-            string keyFile = "SecretKey.txt";
+            string keyFile = "SecretKey.txt";           //secret key storage
 
+            Console.WriteLine("Symmetric Encryption Example - ECB mode");
+
+            ///Generate secret key for appropriate symmetric algorithm and store it to 'keyFile' for further usage
             string secretKey = SecretKey.GenerateKey(AlgorithmType.DES);
             SecretKey.StoreKey(secretKey, keyFile);
             string eSecretKey = SecretKey.LoadKey(keyFile);
 
+            Test_DES_Encrypt(xmlFile, cipherFile, eSecretKey);
+            ///Test_AES_Encrypt(imgFile, cipherFile, eSecretKey);
+            ///Test_3DES_Encrypt(imgFile, cipherFile, eSecretKey);
+            Console.WriteLine("Encryption is done.");
+            Console.ReadLine();
+
             Test_DES_Decrypt(cipherFile, plaintextFile, eSecretKey);
-
-
+            ///Test_AES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
+            ///Test_3DES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
+            Console.WriteLine("Decryption is done.");
         }
 		static void Main(string[] args)
 		{
-			string xmlFile = "Baza.xml";				//source bitmap file
+            /*string xmlFile = "Baza.xml";				//source bitmap file
 			string cipherFile = "Ciphered.xml";			//result of encryption
 			string plaintextFile = "Plainxml.xml";		//result of decryption
 			string keyFile = "SecretKey.txt";			//secret key storage
@@ -92,7 +101,8 @@ namespace SymmetricAlgorithms
 			Test_DES_Decrypt(cipherFile, plaintextFile, eSecretKey);
 			///Test_AES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
 			///Test_3DES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
-			Console.WriteLine("Decryption is done.");
+			Console.WriteLine("Decryption is done.");*/
+            Start2();
 			Console.ReadLine();
 		}
 	}
