@@ -24,6 +24,10 @@ namespace SecurityManager
 
                     Audit.AuthenticationSuccess(principal.Identity.Name);
                 }
+                else
+                {
+                    Audit.UserAuthenticationFailed(principal.Identity.Name);
+                }
 			}
 			return authorized;
 		}

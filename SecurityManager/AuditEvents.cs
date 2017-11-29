@@ -14,7 +14,8 @@ namespace SecurityManager
         UserAuthenticationSuccess = 1,
 		UserAuthorizationSuccess = 2,
 		UserAuthorizationFailed = 3,
-        
+        UserAuthenticationFailed = 4,
+
     }
 
 	public class AuditEvents
@@ -39,7 +40,14 @@ namespace SecurityManager
         /// <summary>
         /// ode u resursni fajl i vraca user{0} je autentifikovan
         /// </summary>
+        public static string UserAuthenticationFailed
+        {
+            get
+            {
+                return ResourceMgr.GetString(AuditEventTypes.UserAuthenticationFailed.ToString());
+            }
 
+        }
         public static string DOS_attack_report
         {
             get

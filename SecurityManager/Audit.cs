@@ -38,6 +38,20 @@ namespace SecurityManager
         /// customlog.
         /// </summary>
         /// <param name="userName"></param>
+        /// 
+
+        public static void UserAuthenticationFailed(string username)
+        {
+            if (customLog != null)
+            {
+                customLog.WriteEntry(string.Format(AuditEvents.UserAuthorizationFailed, username));
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventid = {0}) to event log.", (int)AuditEventTypes.UserAuthenticationSuccess));
+            }
+
+        }
         public static void Dos_Attack_Report(string username)
         {
             // string UserAuthenticationSuccess -> read string format from .resx file

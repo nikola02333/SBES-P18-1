@@ -9,7 +9,6 @@ C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\
 C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.exe
 C:\Users\Administrator.P05-03\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\SBES-P18_Server.exe.config
-C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\SBES-P18_Server.exe
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\SBES-P18_Server.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\Common.dll
@@ -20,5 +19,6 @@ C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\SymmetricAlgor
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\Common.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\SecurityManager.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\bin\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.exe
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\SBES-P18_Server\obj\Debug\SBES-P18_Server.pdb

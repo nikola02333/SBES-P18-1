@@ -16,13 +16,9 @@ C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Worker.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Common.dll
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SBES-P18_Server.exe
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SecurityManager.dll
-C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SymmetricAlgorithms.exe
-C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\KeyManagement.dll
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\Common.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SBES-P18_Server.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SecurityManager.pdb
-C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\SymmetricAlgorithms.pdb
-C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\bin\Debug\KeyManagement.pdb
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.csprojResolveAssemblyReference.cache
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.exe
 C:\Users\nikola\Desktop\MyRepo\SBES-P18\Worker\obj\Debug\Worker.pdb
