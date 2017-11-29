@@ -48,11 +48,11 @@ namespace SBES_P18_Server
              string opcija = Console.ReadLine();
             if(opcija =="1")
             {
-                SymmetricAlgorithms.Program.Start2();
+                SymmetricAlgorithmsCBC.Program.StartCBC();
             }
-            else
+            if (opcija == "2")
             {
-
+                SymmetricAlgorithmsCBC.Program.StartCBC();
             }
             Console.ReadKey();
             Stop();

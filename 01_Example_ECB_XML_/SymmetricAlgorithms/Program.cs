@@ -53,12 +53,12 @@ namespace SymmetricAlgorithms
 		#endregion
 
 		
-        public static void Start2()
+        public static void Start()
         {
             string xmlFile = "Baza.xml";                //source bitmap file
-            string cipherFile = "Ciphered.xml";         //result of encryption
-            string plaintextFile = "Plainxml.xml";      //result of decryption
-            string keyFile = "SecretKey.txt";           //secret key storage
+            string cipherFile = "Ciphered_EBC.xml";         //result of encryption
+            string plaintextFile = "Plainxml_EBC.xml";      //result of decryption
+            string keyFile = "SecretKey_EBC.txt";           //secret key storage
 
             Console.WriteLine("Symmetric Encryption Example - ECB mode");
 
@@ -102,7 +102,7 @@ namespace SymmetricAlgorithms
 			///Test_AES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
 			///Test_3DES_Decrypt(cipherFile, plaintextFile, SecretKey.LoadKey(keyFile));
 			Console.WriteLine("Decryption is done.");*/
-            Start2();
+            Start();
 			Console.ReadLine();
 		}
 	}

@@ -1,0 +1,28 @@
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01_R_CBC\SymmetricAlgorithms\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+D:\Doktorske\PREDMETI\ESI\00 ESI_VEZBE\01 - Uvod, Enkripcija\01 Exercise\Example_01\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\SymmetricAlgorithms.pdb
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.dll
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\x64\Debug\KeyManagement.pdb
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.exe
+C:\Users\Administrator.P05-02\Desktop\02_Example_CBC\SymmetricAlgorithms\obj\x64\Debug\SymmetricAlgorithms.pdb

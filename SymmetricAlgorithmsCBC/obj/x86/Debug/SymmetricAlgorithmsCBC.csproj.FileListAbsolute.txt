@@ -1,0 +1,6 @@
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\Debug\SymmetricAlgorithms.pdb
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\Debug\KeyManagement.dll
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\bin\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\obj\x86\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\02_Example_CBC\SymmetricAlgorithms\obj\x86\Debug\SymmetricAlgorithms.pdb

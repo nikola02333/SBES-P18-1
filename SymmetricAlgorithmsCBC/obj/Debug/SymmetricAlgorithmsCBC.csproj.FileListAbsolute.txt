@@ -1,0 +1,7 @@
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\bin\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\bin\Debug\SymmetricAlgorithms.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\bin\Debug\KeyManagement.dll
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\bin\Debug\KeyManagement.pdb
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\obj\Debug\SymmetricAlgorithmsCBC.csprojResolveAssemblyReference.cache
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\obj\Debug\SymmetricAlgorithms.exe
+C:\Users\nikola\Desktop\MyRepo\SBES-P18\SymmetricAlgorithmsCBC\obj\Debug\SymmetricAlgorithms.pdb

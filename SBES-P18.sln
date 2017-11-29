@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "01_Example_ECB_X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymmetricAlgorithms", "01_Example_ECB_XML_\SymmetricAlgorithms\SymmetricAlgorithms.csproj", "{7E54ED96-95F3-4C72-BA89-4B582778DF48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymmetricAlgorithmsCBC", "SymmetricAlgorithmsCBC\SymmetricAlgorithmsCBC.csproj", "{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,17 @@ Global
 		{7E54ED96-95F3-4C72-BA89-4B582778DF48}.Release|x64.Build.0 = Release|x64
 		{7E54ED96-95F3-4C72-BA89-4B582778DF48}.Release|x86.ActiveCfg = Release|x86
 		{7E54ED96-95F3-4C72-BA89-4B582778DF48}.Release|x86.Build.0 = Release|x86
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|x64.ActiveCfg = Debug|x64
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|x64.Build.0 = Debug|x64
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|x86.ActiveCfg = Debug|x86
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Debug|x86.Build.0 = Debug|x86
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Release|Any CPU.ActiveCfg = Release|x86
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Release|x64.ActiveCfg = Release|x64
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Release|x64.Build.0 = Release|x64
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Release|x86.ActiveCfg = Release|x86
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,5 +146,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{89744AA9-E141-416D-B0DB-D8974A925BC6} = {6C6C6324-98FE-4E6A-9DC4-B08268A1FBE3}
 		{7E54ED96-95F3-4C72-BA89-4B582778DF48} = {6C6C6324-98FE-4E6A-9DC4-B08268A1FBE3}
+		{DE74AD0C-5023-4F02-BC9D-F133E0A045BA} = {6C6C6324-98FE-4E6A-9DC4-B08268A1FBE3}
 	EndGlobalSection
 EndGlobal

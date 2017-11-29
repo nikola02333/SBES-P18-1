@@ -81,6 +81,10 @@
       <Project>{E41D356E-A8A3-4C09-B69F-FEBCB79C11B9}</Project>
       <Name>SecurityManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SymmetricAlgorithmsCBC\SymmetricAlgorithmsCBC.csproj">
+      <Project>{de74ad0c-5023-4f02-bc9d-f133e0a045ba}</Project>
+      <Name>SymmetricAlgorithmsCBC</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

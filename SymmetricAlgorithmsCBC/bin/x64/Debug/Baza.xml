@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Brojila>
+  <Brojilo>
+    <Id>123</Id>
+    <Ime>Niki</Ime>
+    <Prezime>Velickovic</Prezime>
+    <Potrosnja>666</Potrosnja>
+  </Brojilo>
+</Brojila>
