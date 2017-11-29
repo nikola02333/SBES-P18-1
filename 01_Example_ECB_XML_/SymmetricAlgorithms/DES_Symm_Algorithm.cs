@@ -21,21 +21,18 @@ namespace SymmetricAlgorithms
 		public static void EncryptFile(string inFile, string outFile, string secretKey)
 		{
 			
-            
             byte[] xmlfile = File.ReadAllBytes(inFile);
-
 
             DESCryptoServiceProvider desCrypto = new DESCryptoServiceProvider();
 
-            desCrypto.Mode = CipherMode.ECB; //
-            desCrypto.Padding = PaddingMode.Zeros; // dopuni nulama ili cime oces 
+            desCrypto.Mode = CipherMode.ECB; 
+            desCrypto.Padding = PaddingMode.Zeros; 
             desCrypto.Key = Encoding.ASCII.GetBytes(secretKey);
 
 
             ICryptoTransform desEncrypt = desCrypto.CreateEncryptor();
             MemoryStream memoryStream = new MemoryStream();
             
-            // nad tim strimom  , smesta u memoryStream
             CryptoStream cryptoStream = new CryptoStream(memoryStream,  
         desEncrypt, CryptoStreamMode.Write);
 
@@ -43,8 +40,7 @@ namespace SymmetricAlgorithms
           //cryptoStream.Write(header, 0, header.Length);  
             cryptoStream.FlushFinalBlock();
 
-            // u memoristrim se nalazi
-            //u body se nalazi 
+        
             int length = xmlfile.Length;
 
             Formatter.Compose(memoryStream.ToArray(), length,outFile);
@@ -59,16 +55,13 @@ namespace SymmetricAlgorithms
 		/// <param name="secretKey"> symmetric encryption key </param>
 		public static void DecryptFile(string inFile, string outFile, string secretKey)
 		{
-			byte[] header = null;		//image header (54 byte) should not be decrypted
-			byte[] body = null;			//image body to be decrypted
-
+			
             byte[] xmlfile = File.ReadAllBytes(inFile); 
-			 //Formatter.Decompose(xmlfile, out body );			
 			
 			DESCryptoServiceProvider desCrpto = new DESCryptoServiceProvider();
 
             desCrpto.Mode = CipherMode.ECB; //
-            desCrpto.Padding = PaddingMode.Zeros; // 
+            desCrpto.Padding = PaddingMode.Zeros; 
             desCrpto.Key = Encoding.ASCII.GetBytes(secretKey);
 
 
@@ -79,15 +72,7 @@ namespace SymmetricAlgorithms
 
             cryptoStream.Write(xmlfile, 0 , memoryStream.ToArray().Length);
 
-            //int lenght = xmlfile.Length;
-           // Formatter.Compose(xmlfile, lenght, outFile);
-
-            /// desCrypto.Padding = PaddingMode.None;
-
-            /// ICryptoTransform desDecrypt = desCrypto.CreateDecryptor();
-            /// CryptoStream cryptoStream
-
-            /// output = header + decrypted_body
+           
              Formatter.Compose(xmlfile,xmlfile.Length,outFile);					
         }
 	}
